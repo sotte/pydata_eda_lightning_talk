@@ -1,0 +1,56 @@
+{
+  "dataset_name": null,
+  "meta": {
+    "great_expectations.__version__": "0.4.2"
+  },
+  "expectations": [
+    {
+      "expectation_type": "expect_column_to_exist",
+      "kwargs": {
+        "column": "SepalLength"
+      }
+    },
+    {
+      "expectation_type": "expect_column_to_exist",
+      "kwargs": {
+        "column": "SepalWidth"
+      }
+    },
+    {
+      "expectation_type": "expect_column_to_exist",
+      "kwargs": {
+        "column": "PetalLength"
+      }
+    },
+    {
+      "expectation_type": "expect_column_to_exist",
+      "kwargs": {
+        "column": "PetalWidth"
+      }
+    },
+    {
+      "expectation_type": "expect_column_to_exist",
+      "kwargs": {
+        "column": "Name"
+      }
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_set",
+      "kwargs": {
+        "column": "Name",
+        "values_set": [
+          "Iris-setosa",
+          "Iris-virginica",
+          "Iris-versicolor"
+        ]
+      }
+    },
+    {
+      "expectation_type": "expect_column_min_to_be_between",
+      "kwargs": {
+        "column": "PetalWidth",
+        "min_value": 0.1
+      }
+    }
+  ]
+}
